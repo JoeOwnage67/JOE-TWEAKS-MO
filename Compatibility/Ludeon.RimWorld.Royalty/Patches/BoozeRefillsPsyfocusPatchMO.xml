@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Medieval Overhaul</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>	
+				
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Beer Refills Psyfocus</li>
+					</mods>
+					<nomatch Class="PatchOperationSequence">
+						<operations>
+
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[@Name="DankPyon_DrugBase"]</xpath>
+								<value>
+									<ingestible>
+										<outcomeDoers>
+											<li Class="IngestionOutcomeDoer_OffsetPsyfocus">
+												<offset>0.05</offset>
+											</li>
+										</outcomeDoers>
+									</ingestible>
+								</value>
+							</li>				
+
+						</operations>
+					</nomatch>
+				</li>
+			</operations>
+		</match>	
+	</Operation>	
+</Patch>

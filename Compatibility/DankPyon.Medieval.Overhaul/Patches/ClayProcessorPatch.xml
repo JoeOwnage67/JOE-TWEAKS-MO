@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Patch>
+
+<!--stonecutting recipe makes clay -->
+    <Operation Class="PatchOperationConditional">
+		<xpath>Defs/RecipeDef[defName="DankPyon_Make_StoneBlocksClay"]/label</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/RecipeDef[defName="DankPyon_Make_StoneBlocksClay"]/label</xpath>
+			<value>
+				<label>cut clay chunk into pieces</label>
+			</value>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/RecipeDef[defName="DankPyon_Make_StoneBlocksClay"]/description</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/RecipeDef[defName="DankPyon_Make_StoneBlocksClay"]/description</xpath>
+			<value>
+				<description>Cuts clay chunks into useable sized pieces to be shaped into bricks and fired in the kiln</description>
+			</value>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/RecipeDef[defName="DankPyon_Make_StoneBlocksClay"]/products</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/RecipeDef[defName="DankPyon_Make_StoneBlocksClay"]/products</xpath>
+			<value>
+				<products>
+					<DankPyon_Clay>35</DankPyon_Clay>
+				</products>
+			</value>
+		</match>
+	</Operation>
+
+
+<!-- it takes half a day to fire a batch of bricks -->
+    <Operation Class="PatchOperationConditional">
+		<xpath>Defs/ProcessorFramework.ProcessDef[defName="DankPyon_ClayIntoBrick"]/processDays</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ProcessorFramework.ProcessDef[defName="DankPyon_ClayIntoBrick"]/processDays</xpath>
+			<value>
+				<processDays>0.5</processDays>
+			</value>
+		</match>
+	</Operation>
+
+<!-- kiln can make x bricks at a time -->
+    <Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="DankPyon_Kiln"]/comps/li[@Class="ProcessorFramework.CompProperties_Processor"]/capacity</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="DankPyon_Kiln"]/comps/li[@Class="ProcessorFramework.CompProperties_Processor"]/capacity</xpath>
+			<value>
+				<capacity>200</capacity>
+			</value>
+		</match>
+	</Operation>
+</Patch>
