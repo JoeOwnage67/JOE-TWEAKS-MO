@@ -3,7 +3,7 @@
 <Defs>
 	<!-- Oricalcum Ingots -->
 	<RecipeDef MayRequire="DankPyon.Medieval.Overhaul" ParentName="DankPyon_SmelterBase">
-		<defName>DankPyon_MakeIngots_Uranium</defName>
+		<defName>Joe_MakeIngots_Uranium</defName>
 		<workAmount>2400</workAmount>
 		<label>refine raw oricalcum into an ingot</label>
 		<jobString>Refining raw oricalcum into 1 ingot.</jobString>
@@ -12,7 +12,7 @@
 			<li>
 				<filter>
 					<thingDefs>
-						<li>DankPyon_UraniumOre</li>
+						<li>Joe_UraniumOre</li>
 					</thingDefs>
 				</filter>
 				<count>2</count>
@@ -36,7 +36,7 @@
 		</ingredients>
 		<fixedIngredientFilter>
 			<thingDefs>
-				<li>DankPyon_UraniumOre</li>
+				<li>Joe_UraniumOre</li>
 				<li>DankPyon_IronIngot</li>
 				<li>DankPyon_Coal</li>
 			</thingDefs>
@@ -53,7 +53,7 @@
 	</RecipeDef>
   
 	<RecipeDef MayRequire="DankPyon.Medieval.Overhaul" ParentName="DankPyon_SmelterBase">
-		<defName>DankPyon_MakeIngots_UraniumBulk</defName>
+		<defName>Joe_MakeIngots_UraniumBulk</defName>
 		<workAmount>3600</workAmount>
 		<label>refine raw oricalcum into 30 ingots</label>
 		<jobString>Refining raw oricalcum into 30 ingots.</jobString>
@@ -62,7 +62,7 @@
 			<li>
 				<filter>
 					<thingDefs>
-						<li>DankPyon_UraniumOre</li>
+						<li>Joe_UraniumOre</li>
 					</thingDefs>
 				</filter>
 				<count>60</count>
@@ -86,7 +86,7 @@
 		</ingredients>
 		<fixedIngredientFilter>
 			<thingDefs>
-				<li>DankPyon_UraniumOre</li>
+				<li>Joe_UraniumOre</li>
 				<li>DankPyon_IronIngot</li>
 				<li>DankPyon_Coal</li>
 			</thingDefs>
@@ -103,7 +103,7 @@
 	</RecipeDef>
 
 	<RecipeDef MayRequire="DankPyon.Medieval.Overhaul" ParentName="DankPyon_SmelterBase">
-		<defName>DankPyon_MakeIngots_UraniumExtraBulk</defName>
+		<defName>Joe_MakeIngots_UraniumExtraBulk</defName>
 		<workAmount>4800</workAmount>
 		<label>refine raw oricalcum into 60 ingots</label>
 		<jobString>Refining raw oricalcum into 60 ingots.</jobString>
@@ -112,7 +112,7 @@
 			<li>
 				<filter>
 					<thingDefs>
-						<li>DankPyon_UraniumOre</li>
+						<li>Joe_UraniumOre</li>
 					</thingDefs>
 				</filter>
 				<count>120</count>
@@ -136,7 +136,7 @@
 		</ingredients>
 		<fixedIngredientFilter>
 			<thingDefs>
-				<li>DankPyon_UraniumOre</li>
+				<li>Joe_UraniumOre</li>
 				<li>DankPyon_IronIngot</li>
 				<li>DankPyon_Coal</li>
 			</thingDefs>

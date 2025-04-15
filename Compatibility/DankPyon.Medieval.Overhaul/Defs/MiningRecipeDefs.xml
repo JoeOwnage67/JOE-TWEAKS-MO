@@ -3,7 +3,7 @@
 	
 		<!-- add mithril to mine -->
 	<RecipeDef MayRequire="DankPyon.Medieval.Overhaul" ParentName="DankPyon_MineShaftBase">
-		<defName>DankPyon_MakeOre_Mithril</defName>
+		<defName>Joe_MakeOre_Mithril</defName>
 		<description>Mine deep down underground to obtain raw mithril.</description>
 		<workAmount>6000</workAmount>
 		<label>mine raw mithril</label>
@@ -15,20 +15,20 @@
 
 		<!--add oricalcum to mine -->
 	<RecipeDef MayRequire="DankPyon.Medieval.Overhaul" ParentName="DankPyon_MineShaftBase">
-		<defName>DankPyon_MakeOre_Uranium</defName>
+		<defName>Joe_MakeOre_Uranium</defName>
 		<description>Mine deep down underground to obtain raw oricalcum.</description>
 		<workAmount>6000</workAmount>
 		<label>mine raw oricalcum</label>
 		<jobString>Mining raw oricalcum.</jobString>
 		<products>
-			<DankPyon_UraniumOre>1</DankPyon_UraniumOre>
+			<Joe_UraniumOre>1</Joe_UraniumOre>
 		</products>
 	</RecipeDef>
 
 		<!-- add raw pyrinth to mine -->
 	<Defs>
 	<RecipeDef MayRequire="det.epochspyrinth" ParentName="DankPyon_MineShaftBase">
-		<defName>Mine_Pyrinth</defName>
+		<defName>Joe_Mine_Pyrinth</defName>
 		<description>Mine deep down underground to obtain raw pyrinth.</description>
 		<workAmount>1000</workAmount>
 		<label>mine raw pyrinth</label>
@@ -41,4 +41,3 @@
 
 	
 </Defs>
-

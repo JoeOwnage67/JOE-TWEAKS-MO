@@ -5,7 +5,7 @@
    <Operation Class="PatchOperationAdd">
 		<xpath>Defs/GenStepDef[defName="PreciousLump"]/genStep/mineables</xpath>
 		<value>
-			<li>MineableOricalcum</li>
+			<li>Joe_MineableOricalcum</li>
 		</value>
 	</Operation>
 

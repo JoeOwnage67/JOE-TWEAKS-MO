@@ -3,7 +3,7 @@
 <Defs>
 
   <ThingDef MayRequire="DankPyon.Medieval.Overhaul" ParentName="ResourceBase">
-		<defName>DankPyon_UraniumOre</defName>
+		<defName>Joe_UraniumOre</defName>
 		<label>raw oricalcum</label>
 		<description>Raw oricalcum, needs to be processed into ingots at a smelter to be usable.</description>
 		<graphicData>
@@ -33,7 +33,7 @@
 	</ThingDef>
 	
   	<ThingDef MayRequire="DankPyon.Medieval.Overhaul" ParentName="RockBase">
-    	<defName>MineableOricalcum</defName>
+    	<defName>Joe_MineableOricalcum</defName>
 	    <label>compacted oricalcum</label>
 	    <description>Ancient compacted rubble rich in oricalcum.</description>
 	    <graphicData>
@@ -48,7 +48,7 @@
 	    </statBases>
 	    <building>
 	      <isResourceRock>true</isResourceRock>
-	      <mineableThing>DankPyon_UraniumOre</mineableThing>
+	      <mineableThing>Joe_UraniumOre</mineableThing>
 	      <mineableYield>40</mineableYield>
 	      <mineableScatterCommonality>0.12</mineableScatterCommonality>
 	      <mineableScatterLumpSizeRange>6~12</mineableScatterLumpSizeRange>

@@ -29,7 +29,7 @@
                 <li Class="PatchOperationAdd">
                     <xpath>/Defs/FactionDef[@Name="DankPyon_NobleHouseFactionBase"]/caravanTraderKinds</xpath>
                     <value>
-                        <li>Caravan_ArcaneTrader</li>
+                        <li MayRequire="Ludeon.RimWorld.Royalty">Caravan_ArcaneTrader</li>
                         <li>Caravan_AlchemistTrader</li>
                         <li>Caravan_LibrarianTrader</li>
                         <li>Caravan_ProstheticsTrader</li>
