@@ -6,6 +6,7 @@
     <li>1.5</li>
     <li IfModActive="Ludeon.RimWorld.Biotech">Compatibility/Ludeon.RimWorld.Biotech</li>
     <li IfModActive="Ludeon.RimWorld.Royalty">Compatibility/Ludeon.RimWorld.Royalty</li>
+    <li IfModActive="Ludeon.RimWorld.Ideology">Compatibility/Ludeon.RimWorld.Ideology</li>
     <li IfModActive="DankPyon.Medieval.Overhaul">Compatibility/DankPyon.Medieval.Overhaul</li>       
     <li IfModActive="Turkler.MedievalOverhaul.ArcaneArchaeologists">Compatibility/Turkler.MedievalOverhaul.ArcaneArchaeologists</li>
     <li IfModActive="zal.eyeprosthetics">Compatibility/zal.eyeprosthetics</li>

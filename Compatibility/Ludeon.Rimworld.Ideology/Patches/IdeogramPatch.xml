@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<Patch>  
+    <Operation Class="PatchOperationConditional">
+		    <xpath>Defs/ThingDef[defName="Ideogram"]/costList</xpath>
+            <match Class="PatchOperationReplace">
+            <xpath>Defs/ThingDef[defName="Ideogram"]/costList</xpath>
+                <value>
+                    <costList>
+                    </costList>
+                 </value>
+            </match>
+	</Operation>
+    <Operation Class="PatchOperationConditional">
+		    <xpath>Defs/ThingDef[defName="Ideogram"]/stuffCategories</xpath>
+            <match Class="PatchOperationReplace">
+                <xpath>Defs/ThingDef[defName="Ideogram"]/stuffCategories</xpath>
+                <value>
+                    <stuffCategories>
+                        <li>Metallic</li>
+                        <li>Woody</li>
+                        <li>Stony</li>
+                    </stuffCategories>
+                 </value>
+            </match>
+    </Operation>  
+    <Operation Class="PatchOperationConditional">
+		    <xpath>Defs/ThingDef[defName="Ideogram"]/stuffCategories</xpath>                  
+            <nomatch Class="PatchOperationAdd">
+                <xpath>Defs/ThingDef[defName="Ideogram"]</xpath>
+                <value>
+                    <stuffCategories>
+                        <li>Metallic</li>
+                        <li>Woody</li>
+                        <li>Stony</li>
+                    </stuffCategories>
+                 </value>
+            </nomatch>
+	</Operation>
+    <Operation Class="PatchOperationConditional">
+		    <xpath>Defs/ThingDef[defName="Ideogram"]/costStuffCount</xpath>
+            <match Class="PatchOperationReplace">
+                <xpath>Defs/ThingDef[defName="Ideogram"]/costStuffCount</xpath>
+                <value>
+                    <costStuffCount>50</costStuffCount>
+                 </value>
+            </match>
+    </Operation>     
+    <Operation Class="PatchOperationConditional">
+		    <xpath>Defs/ThingDef[defName="Ideogram"]/costStuffCount</xpath>       
+            <nomatch Class="PatchOperationAdd">
+                <xpath>Defs/ThingDef[defName="Ideogram"]</xpath>
+                <value>
+                    <costStuffCount>50</costStuffCount>
+                 </value>
+            </nomatch>
+	</Operation>
+</Patch>
