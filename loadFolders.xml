@@ -12,5 +12,6 @@
     <li IfModActive="zal.eyeprosthetics">Compatibility/zal.eyeprosthetics</li>
     <li IfModActive="JoeDaly.MedMeds.MO">Compatibility/JoeDaly.MedMeds.MO</li>
     <li IfModActive="Rebuild.COTR.DoorsandCorners">Compatibility/Rebuild.COTR.DoorsandCorners</li>
+    <li IfModActive="badoaks.CampfireStews">Compatibility/badoaks.CampfireStews</li>
   </v1.5>
 </loadFolders>
