@@ -43,6 +43,7 @@
 		<li>Sierra.RF.MedievalOverhaul</li>
         <li>OskarPotocki.VanillaFactionsExpanded.Core</li>
         <li>ferny.ReplaceLib</li>
+        <li>ferny.progressionaesthetics</li>
     </loadAfter>
     <incompatibleWith>
 		<li>Joe.RPGAdventureFlavour.Fork</li>

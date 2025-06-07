@@ -13,5 +13,6 @@
     <li IfModActive="JoeDaly.MedMeds.MO">Compatibility/JoeDaly.MedMeds.MO</li>
     <li IfModActive="Rebuild.COTR.DoorsandCorners">Compatibility/Rebuild.COTR.DoorsandCorners</li>
     <li IfModActive="badoaks.CampfireStews">Compatibility/badoaks.CampfireStews</li>
+    <li IfModActive="OskarPotocki.VFE.Medieval2">Compatibility/OskarPotocki.VFE.Medieval2</li>
   </v1.5>
 </loadFolders>
