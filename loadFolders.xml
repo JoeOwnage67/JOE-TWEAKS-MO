@@ -20,15 +20,18 @@
     <li>/</li>
     <li>Common</li>
     <li>1.6</li>
-    <li IfModActive="Ludeon.RimWorld.Biotech">Compatibility/Ludeon.RimWorld.Biotech</li>
-    <li IfModActive="Ludeon.RimWorld.Royalty">Compatibility/Ludeon.RimWorld.Royalty</li>
-    <li IfModActive="Ludeon.RimWorld.Ideology">Compatibility/Ludeon.RimWorld.Ideology</li>
-    <li IfModActive="DankPyon.Medieval.Overhaul">Compatibility/DankPyon.Medieval.Overhaul</li>       
-    <!-- <li IfModActive="Turkler.MedievalOverhaul.ArcaneArchaeologists">Compatibility/Turkler.MedievalOverhaul.ArcaneArchaeologists</li> NEEDS 1.6 UPDATE -->
-    <li IfModActive="zal.eyeprosthetics">Compatibility/zal.eyeprosthetics</li>
-    <li IfModActive="JoeDaly.MedMeds.MO">Compatibility/JoeDaly.MedMeds.MO</li>
-    <li IfModActive="Rebuild.COTR.DoorsandCorners">Compatibility/Rebuild.COTR.DoorsandCorners</li>
-    <!-- <li IfModActive="badoaks.CampfireStews">Compatibility/badoaks.CampfireStews</li> errors from MO macci -->
-    <li IfModActive="OskarPotocki.VFE.Medieval2">Compatibility/OskarPotocki.VFE.Medieval2</li>
+      <li IfModActive="badoaks.CampfireStews">Compatibility/badoaks.CampfireStews</li>
+      <li IfModActive="DankPyon.Medieval.Overhaul">Compatibility/DankPyon.Medieval.Overhaul</li>
+      <li IfModActive="JoeDaly.MedMeds.MO">Compatibility/JoeDaly.MedMeds.MO</li>
+      <li IfModActive="Ludeon.RimWorld.Biotech">Compatibility/Ludeon.RimWorld.Biotech</li>
+      <li IfModActive="Ludeon.RimWorld.Ideology">Compatibility/Ludeon.RimWorld.Ideology</li>
+      <li IfModActive="Ludeon.RimWorld.Royalty">Compatibility/Ludeon.RimWorld.Royalty</li>
+      <li IfModActive="OskarPotocki.VFE.Medieval2">Compatibility/OskarPotocki.VFE.Medieval2</li>
+      <li IfModActive="RedMattis.BigSmall.Core">Compatibility/RedMattis.BigSmall.Core</li>
+      <li IfModActive="RedMattis.Undead">Compatibility/RedMattis.Undead</li>
+      <li IfModActive="Rebuild.COTR.DoorsandCorners">Compatibility/Rebuild.COTR.DoorsandCorners</li>
+      <!-- <li IfModActive="Turkler.MedievalOverhaul.ArcaneArchaeologists">Compatibility/Turkler.MedievalOverhaul.ArcaneArchaeologists</li> NEEDS 1.6 UPDATE -->
+      <li IfModActive="vanillaracesexpanded.sanguophage">Compatibility/vanillaracesexpanded.sanguophage</li>
+      <li IfModActive="zal.eyeprosthetics">Compatibility/zal.eyeprosthetics</li>
   </v1.6>
 </loadFolders>

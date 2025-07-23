@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Vanilla Races Expanded - Sanguophage</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+
+                <!-- remove VRE xenotypes -->
+
+				<!-- remove VRE_Strigoi -->
+				<li Class="PatchOperationRemove">
+					<xpath>Defs/XenotypeDef[defName="VRE_Strigoi"]</xpath>
+				</li>        
+
+                <!-- remove VRE_Bruxa -->
+				<li Class="PatchOperationRemove">
+					<xpath>Defs/XenotypeDef[defName="VRE_Bruxa"]</xpath>
+                </li>
+
+                <!-- remove SanguophagePawnKindPatch -->
+				<li Class="PatchOperationRemove">
+					<xpath>/Defs/PawnKindDef[@Name = "SanguophageBase"]/xenotypeSet/xenotypeChances</xpath>
+                </li>
+
+                <li Class="PatchOperationFindMod">
+                    <mods>
+                        <li>Big and Small - Vampires and the Undead</li>
+                    </mods>
+                    <match Class="PatchOperationSequence">
+                        <operations>
+
+                            <!-- make redmattis vampires animal and corpsefeeders -->
+                            <li Class="PatchOperationAdd">
+                                <xpath>Defs/XenotypeDef[defName="VU_Dracul_Feral"]/genes</xpath>
+                                <value>
+                                    <li>VRE_AnimalFeeder</li>
+                                </value>
+                            </li>
+
+                            <li Class="PatchOperationAdd">
+                                <xpath>Defs/XenotypeDef[defName="VU_Dracul_Spawn"]/genes</xpath>
+                                <value>
+                                    <li>VRE_AnimalFeeder</li>
+                                    <li>VRE_CorpseFeeder</li>
+                                </value>
+                            </li>
+
+                            <li Class="PatchOperationAdd">
+                                <xpath>Defs/XenotypeDef[defName="VU_Dracul"]/genes</xpath>
+                                <value>
+                                    <li>VRE_AnimalFeeder</li>
+                                    <li>VRE_CorpseFeeder</li>
+                                </value>
+                            </li>
+
+                            <li Class="PatchOperationAdd">
+                                <xpath>Defs/XenotypeDef[defName="VU_Dracul_Mature"]/genes</xpath>
+                                <value>
+                                    <li>VRE_AnimalFeeder</li>
+                                    <li>VRE_CorpseFeeder</li>
+                                </value>
+                            </li>
+
+                            <li Class="PatchOperationAdd">
+                                <xpath>Defs/XenotypeDef[defName="VU_Dracul_Progenitor"]/genes</xpath>
+                                <value>
+                                    <li>VRE_AnimalFeeder</li>
+                                    <li>VRE_CorpseFeeder</li>
+                                </value>
+                            </li>
+
+                            <li Class="PatchOperationAdd">
+                                <xpath>Defs/XenotypeDef[defName="VU_Dracul_HalfVampire"]/genes</xpath>
+                                <value>
+                                    <li>VRE_AnimalFeeder</li>
+                                    <li>VRE_CorpseFeeder</li>
+                                </value>
+                            </li>
+
+                            <li Class="PatchOperationAdd">
+                                <xpath>Defs/XenotypeDef[defName="VU_Nosferatu"]/genes</xpath>
+                                <value>
+                                    <li>VRE_CorpseFeeder</li>
+                                </value>
+                            </li>
+
+                            <li Class="PatchOperationAdd">
+                                <xpath>Defs/XenotypeDef[defName="VU_WhiteRose"]/genes</xpath>
+                                <value>
+                                    <li>VRE_AnimalFeeder</li>
+                                    <li>VRE_CorpseFeeder</li>
+                                </value>
+                            </li>       
+                        </operations>
+		            </match>
+                </li>
+			</operations>
+		</match>	
+	</Operation>
+</Patch>		

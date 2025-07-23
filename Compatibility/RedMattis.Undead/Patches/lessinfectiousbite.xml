@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Big and Small - Vampires and the Undead</li> <!--RedMattis.Undead-->
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+
+				<!-- less infectious vampire bite -->
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/DamageDef[defName="VU_DraculBiteDmg"]/additionalHediffs/li/severityPerDamageDealt</xpath>
+					<value>
+						<severityPerDamageDealt>0.005</severityPerDamageDealt>
+					</value>
+				</li>
+
+			</operations>
+		</match>	
+	</Operation>
+</Patch>		

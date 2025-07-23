@@ -1,36 +1,47 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <Patch>
-	<!-- remove clay resource -->
-    <Operation Class="PatchOperationRemove">
-		<xpath>Defs/ThingDef[@Name="CS_RawClay"]</xpath>
-	</Operation>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Medieval Overhaul</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
 
-    <!-- remove clay collection spot -->	
-	<Operation Class="PatchOperationRemove">
-		<xpath>Defs/ThingDef[defName="CS_ClayCollectionSpot"]</xpath>					
-	</Operation>
+				<!-- remove clay resource -->
+				<li Class="PatchOperationRemove">
+					<xpath>Defs/ThingDef[@Name="CS_RawClay"]</xpath>
+				</li>
 
-    <!-- remove clay collection recipe -->				
-	<Operation Class="PatchOperationRemove">
-		<xpath>Defs/RecipeDef[defName="CS_CollectClay"]</xpath>				
-	</Operation>
+				<!-- remove clay collection spot -->	
+				<li Class="PatchOperationRemove">
+					<xpath>Defs/ThingDef[defName="CS_ClayCollectionSpot"]</xpath>					
+				</li>
 
-    <!-- remove clay collection workgiver -->
-    <Operation Class="PatchOperationRemove">
-		<xpath>Defs/WorkGiverDef[defName="CS_DoBills_CollectClay"]</xpath>				
-	</Operation>
+				<!-- remove clay collection recipe -->				
+				<li Class="PatchOperationRemove">
+					<xpath>Defs/RecipeDef[defName="CS_CollectClay"]</xpath>				
+				</li>
 
-    <!-- remove clay from recipes -->
-    <Operation Class="PatchOperationRemove">
-		<xpath>Defs/RecipeDef[defName="CS_MakeWetClayPot"]/ingredients/li/filter/thingDefs/li[.="CS_RawClay"]</xpath>				
-	</Operation>
+				<!-- remove clay collection workgiver -->
+				<li Class="PatchOperationRemove">
+					<xpath>Defs/WorkGiverDef[defName="CS_DoBills_CollectClay"]</xpath>				
+				</li>
 
-    <Operation Class="PatchOperationRemove">
-		<xpath>Defs/RecipeDef[defName="CS_MakeWetClayPot"]/fixedIngredientFilter/thingDefs/li[.="CS_RawClay"]</xpath>				
-	</Operation>
+				<!-- remove clay from recipes -->
+				<li Class="PatchOperationRemove">
+					<xpath>Defs/RecipeDef[defName="CS_MakeWetClayPot"]/ingredients/li/filter/thingDefs/li[.="CS_RawClay"]</xpath>				
+				</li>
 
-    <Operation Class="PatchOperationRemove">
-		<xpath>Defs/RecipeDef[defName="CS_MakeWetClayPot"]/defaultIngredientFilter/thingDefs/li[.="CS_RawClay"]</xpath>				
-	</Operation>   
-</Patch>
+				<li Class="PatchOperationRemove">
+					<xpath>Defs/RecipeDef[defName="CS_MakeWetClayPot"]/fixedIngredientFilter/thingDefs/li[.="CS_RawClay"]</xpath>				
+				</li>
+
+				<li Class="PatchOperationRemove">
+					<xpath>Defs/RecipeDef[defName="CS_MakeWetClayPot"]/defaultIngredientFilter/thingDefs/li[.="CS_RawClay"]</xpath>				
+				</li>   
+
+			</operations>
+		</match>	
+	</Operation>
+</Patch>		
