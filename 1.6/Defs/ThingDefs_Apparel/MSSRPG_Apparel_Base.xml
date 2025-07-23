@@ -61,14 +61,7 @@
             </defaultOutfitTags>
             <canBeDesiredForIdeo>false</canBeDesiredForIdeo>            
 		</apparel>
-		<modExtensions>
-			<li Class="VEF.Planet.EquipmentOffsetConditions">
-				<techLevels>
-					<li>Neolithic</li>
-					<li>Medieval</li>
-				</techLevels>
-			</li>
-		</modExtensions>
+	
         <tradeTags>
             <li>Armor</li>
         </tradeTags>

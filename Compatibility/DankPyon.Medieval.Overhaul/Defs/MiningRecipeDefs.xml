@@ -26,7 +26,7 @@
 	</RecipeDef>
 
 		<!-- add raw pyrinth to mine -->
-	<Defs>
+	
 	<RecipeDef MayRequire="det.epochspyrinth" ParentName="DankPyon_MineShaftBase">
 		<defName>Joe_Mine_Pyrinth</defName>
 		<description>Mine deep down underground to obtain raw pyrinth.</description>
@@ -37,7 +37,4 @@
 			<DV_Pyrinth>1</DV_Pyrinth>
 		</products>
 	</RecipeDef>
-</Defs>
-
-	
 </Defs>

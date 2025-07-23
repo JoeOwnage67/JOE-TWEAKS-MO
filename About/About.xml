@@ -5,6 +5,7 @@
     <author>JoeOwnage</author>
     <supportedVersions>
         <li>1.5</li>
+        <li>1.6</li>
     </supportedVersions>
     <packageId>Joe.MO.Tweaks</packageId>
     <description>My personal changes to MO from RPG adventure flavour pack (without the rest)</description>

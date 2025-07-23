@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Defs>
+    <TraderKindDef>
+        <defName>Caravan_AlchemistTrader</defName>
+        <label>beast hunter reagent merchant</label>
+        <stockGenerators>
+            <li Class="StockGenerator_SingleDef">
+                <thingDef>Silver</thingDef>
+                <countRange>3000~5000</countRange>
+            </li>
+            <li Class="StockGenerator_SingleDef">
+                <thingDef>MedicineHerbal</thingDef>
+                <countRange>15~25</countRange>
+            </li>
+            <li Class="StockGenerator_SingleDef">
+                <thingDef>PsychoidLeaves</thingDef>
+                <countRange>15~25</countRange>
+            </li>
+            <li Class="StockGenerator_SingleDef">
+                <thingDef>RawAgave</thingDef>
+                <countRange>15~25</countRange>
+            </li>
+            <li Class="StockGenerator_SingleDef">
+                <thingDef>Ambrosia</thingDef>
+                <countRange>5~15</countRange>
+            </li>
+            <li Class="StockGenerator_SingleDef">
+                <thingDef>SmokeleafLeaves</thingDef>
+                <countRange>5~15</countRange>
+            </li>
+            <li Class="StockGenerator_SingleDef">
+                <thingDef>RawHops</thingDef>
+                <countRange>5~15</countRange>
+            </li>
+            <li Class="StockGenerator_SingleDef">
+                <thingDef>InsectJelly</thingDef>
+                <countRange>5~15</countRange>
+            </li>                                   
+            <li Class="StockGenerator_SingleDef" MayRequire="JoeDaly.MedMeds.MO">
+                <thingDef>MedicineLateMedievalMM</thingDef>
+                <countRange>3~8</countRange>
+            </li>
+            <li MayRequire="SirMashedPotato.ESCP.Trolls" Class="StockGenerator_SingleDef">
+                <thingDef>ESCP_TrollBlood</thingDef>
+                <countRange>4~6</countRange>
+            </li>
+            <li MayRequire="Ludeon.RimWorld.Biotech" Class="StockGenerator_SingleDef">
+                <thingDef>Genepack</thingDef>
+                <countRange>2~6</countRange>
+            </li>
+            <li MayRequire="feldoh.devilfruit" Class="StockGenerator_SingleDef">
+                <thingDef>Genepack</thingDef>
+                <countRange>4~10</countRange>
+            </li>
+
+            <!-- Medieval Overhaul -->
+            
+            <li MayRequire="DankPyon.Medieval.Overhaul" Class="StockGenerator_SingleDef">
+				<thingDef>DankPyon_Mindwort</thingDef>
+				<countRange>0~10</countRange>
+			</li>
+			<li MayRequire="DankPyon.Medieval.Overhaul" Class="StockGenerator_SingleDef">
+				<thingDef>DankPyon_Poppy</thingDef>
+				<countRange>0~10</countRange>
+			</li>
+			<li MayRequire="DankPyon.Medieval.Overhaul" Class="StockGenerator_SingleDef">
+				<thingDef>DankPyon_Fleawort</thingDef>
+				<countRange>0~10</countRange>
+			</li>
+			<li MayRequire="DankPyon.Medieval.Overhaul" Class="StockGenerator_SingleDef">
+				<thingDef>DankPyon_FlyAgaric</thingDef>
+				<countRange>0~10</countRange>
+			</li>
+
+            <li MayRequire="DankPyon.Medieval.Overhaul" Class="StockGenerator_SingleDef">
+				<thingDef>DankPyon_Honey</thingDef>
+				<countRange>0~10</countRange>
+			</li>
+
+            <li MayRequire="DankPyon.Medieval.Overhaul" Class="StockGenerator_SingleDef">
+				<thingDef>DankPyon_HornetHoney</thingDef>
+				<countRange>0~10</countRange>
+			</li>
+
+            <li MayRequire="DankPyon.Medieval.Overhaul" Class="StockGenerator_SingleDef">
+				<thingDef>DankPyon_SchratHeart</thingDef>
+				<countRange>0~4</countRange>
+			</li>
+
+            <li MayRequire="DankPyon.Medieval.Overhaul" Class="StockGenerator_SingleDef">
+				<thingDef>DankPyon_AncientWood</thingDef>
+				<countRange>0~4</countRange>
+			</li>
+
+            <li MayRequire="DankPyon.Medieval.Overhaul" Class="StockGenerator_SingleDef">
+				<thingDef>DankPyon_GlowingResin</thingDef>
+				<countRange>0~4</countRange>
+			</li>
+
+            <li MayRequire="DankPyon.Medieval.Overhaul" Class="StockGenerator_SingleDef">
+				<thingDef>DankPyon_UnholdBones</thingDef>
+				<countRange>0~4</countRange>
+			</li>
+
+            <li MayRequire="DankPyon.Medieval.Overhaul" Class="StockGenerator_SingleDef">
+				<thingDef>DankPyon_ThickUnholdFur</thingDef>
+				<countRange>0~4</countRange>
+			</li>
+
+            <li MayRequire="DankPyon.Medieval.Overhaul" Class="StockGenerator_SingleDef">
+				<thingDef>DankPyon_UnholdHide</thingDef>
+				<countRange>0~4</countRange>
+			</li>
+
+            <li MayRequire="DankPyon.Medieval.Overhaul" Class="StockGenerator_SingleDef">
+				<thingDef>DankPyon_UnholdHeart</thingDef>
+				<countRange>0~4</countRange>
+			</li>
+
+            <li MayRequire="DankPyon.Medieval.Overhaul" Class="StockGenerator_SingleDef">
+				<thingDef>DankPyon_TrollHeart</thingDef>
+				<countRange>0~4</countRange>
+			</li>
+
+            <li MayRequire="DankPyon.Medieval.Overhaul" Class="StockGenerator_SingleDef">
+				<thingDef>DankPyon_Gossamer</thingDef>
+				<countRange>0~4</countRange>
+			</li>
+
+            <li MayRequire="DankPyon.Medieval.Overhaul" Class="StockGenerator_SingleDef">
+				<thingDef>DankPyon_PoisonGland</thingDef>
+				<countRange>0~4</countRange>
+			</li>
+
+            <li MayRequire="DankPyon.Medieval.Overhaul" Class="StockGenerator_SingleDef">
+				<thingDef>DankPyon_RedbackPoisonGland</thingDef>
+				<countRange>0~4</countRange>
+			</li>
+
+            <li MayRequire="DankPyon.Medieval.Overhaul" Class="StockGenerator_SingleDef">
+				<thingDef>DankPyon_LindwurmBlood</thingDef>
+				<countRange>0~4</countRange>
+			</li>
+
+            <li MayRequire="DankPyon.Medieval.Overhaul" Class="StockGenerator_SingleDef">
+				<thingDef>DankPyon_LindwurmBones</thingDef>
+				<countRange>0~4</countRange>
+			</li>
+            
+            <li MayRequire="DankPyon.Medieval.Overhaul" Class="StockGenerator_SingleDef">
+				<thingDef>DankPyon_LindwurmScales</thingDef>
+				<countRange>0~4</countRange>
+			</li>
+
+            <li MayRequire="DankPyon.Medieval.Overhaul" Class="StockGenerator_SingleDef">
+				<thingDef>DankPyon_NachHorns</thingDef>
+				<countRange>0~4</countRange>
+			</li>
+
+            <li MayRequire="DankPyon.Medieval.Overhaul" Class="StockGenerator_SingleDef">
+				<thingDef>DankPyon_ParchedSkin</thingDef>
+				<countRange>0~4</countRange>
+			</li>
+
+            <li MayRequire="DankPyon.Medieval.Overhaul" Class="StockGenerator_SingleDef">
+				<thingDef>DankPyon_PetrifiedScream</thingDef>
+				<countRange>0~4</countRange>
+			</li>
+
+            <li MayRequire="DankPyon.Medieval.Overhaul" Class="StockGenerator_SingleDef">
+				<thingDef>DankPyon_ThirdEye</thingDef>
+				<countRange>0~4</countRange>
+			</li>
+
+            <li MayRequire="DankPyon.Medieval.Overhaul" Class="StockGenerator_SingleDef">
+				<thingDef>DankPyon_AdrenalineGland</thingDef>
+				<countRange>0~4</countRange>
+			</li>
+
+
+
+            <!-- VFEM2 -->
+            <li MayRequire="OskarPotocki.VFE.Medieval2" Class="StockGenerator_SingleDef">
+                <thingDef>VFEM2_RafflesiaLeaves</thingDef>
+                <countRange>5~20</countRange>
+            </li>
+
+            <li MayRequire="OskarPotocki.VFE.Medieval2" Class="StockGenerator_SingleDef">
+                <thingDef>VFEM2_RawGlowstool</thingDef>
+                <countRange>5~20</countRange>
+            </li>
+
+            <li MayRequire="OskarPotocki.VFE.Medieval2" Class="StockGenerator_SingleDef">
+                <thingDef>VFEM2_CliviaPetals</thingDef>
+                <countRange>5~20</countRange>
+            </li>
+
+            <li MayRequire="OskarPotocki.VFE.Medieval2" Class="StockGenerator_SingleDef">
+                <thingDef>VFEM2_AlocasiaLeaves</thingDef>
+                <countRange>5~20</countRange>
+            </li>
+
+            <li MayRequire="OskarPotocki.VFE.Medieval2" Class="StockGenerator_SingleDef">
+                <thingDef>VFEM2_AstragalusFlowers</thingDef>
+                <countRange>5~20</countRange>
+            </li>
+            
+
+        </stockGenerators>
+
+    </TraderKindDef>
+
+    <TraderKindDef MayRequire="feldoh.devilfruit">
+        <defName>MSSRPG_Caravan_FruitTrader</defName>
+        <label>Fruit Trader</label>
+        <stockGenerators>
+            <li Class="StockGenerator_SingleDef">
+                <thingDef>Silver</thingDef>
+                <countRange>5000~8000</countRange>
+            </li>
+            <li Class="StockGenerator_SingleDef">
+                <thingDef>MedicineHerbal</thingDef>
+                <countRange>15~25</countRange>
+            </li>
+            <li Class="StockGenerator_SingleDef">
+                <thingDef>Genepack</thingDef>
+                <countRange>8~12</countRange>
+            </li>
+        </stockGenerators>
+    </TraderKindDef>
+</Defs>
