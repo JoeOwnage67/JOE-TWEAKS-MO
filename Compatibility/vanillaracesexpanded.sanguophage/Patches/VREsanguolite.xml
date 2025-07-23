@@ -8,18 +8,6 @@
 		<match Class="PatchOperationSequence">
 			<operations>
 
-                <!-- remove VRE xenotypes -->
-
-				<!-- remove VRE_Strigoi -->
-				<li Class="PatchOperationRemove">
-					<xpath>Defs/XenotypeDef[defName="VRE_Strigoi"]</xpath>
-				</li>        
-
-                <!-- remove VRE_Bruxa -->
-				<li Class="PatchOperationRemove">
-					<xpath>Defs/XenotypeDef[defName="VRE_Bruxa"]</xpath>
-                </li>
-
                 <!-- remove SanguophagePawnKindPatch -->
 				<li Class="PatchOperationRemove">
 					<xpath>/Defs/PawnKindDef[@Name = "SanguophageBase"]/xenotypeSet/xenotypeChances</xpath>
