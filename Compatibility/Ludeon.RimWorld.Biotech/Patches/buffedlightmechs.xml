@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+  <Operation Class="PatchOperationReplace">
+    <xpath>/Defs/ThingDef[defName="Mech_Constructoid"]/statBases/ConstructionSpeed</xpath>
+    <value>
+      <ConstructionSpeed>5</ConstructionSpeed>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <xpath>/Defs/ThingDef[defName="Mech_Agrihand"]/statBases/PlantWorkSpeed</xpath>
+    <value>
+      <PlantWorkSpeed>8</PlantWorkSpeed>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <xpath>/Defs/ThingDef[defName="Mech_Lifter"]/statBases/MoveSpeed</xpath>
+    <value>
+      <MoveSpeed>6</MoveSpeed>
+    </value>
+  </Operation>
+  
+   <Operation Class="PatchOperationReplace">
+    <xpath>/Defs/ThingDef[defName="Mech_Militor"]/statBases/MoveSpeed</xpath>
+    <value>
+      <MoveSpeed>6</MoveSpeed>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <xpath>/Defs/ThingDef[defName="Mech_Cleansweeper"]/statBases/CleaningSpeed</xpath>
+    <value>
+      <CleaningSpeed>0.5</CleaningSpeed>
+    </value>
+  </Operation>
+
+
+
+</Patch>
