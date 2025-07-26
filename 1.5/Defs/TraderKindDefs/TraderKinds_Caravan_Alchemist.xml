@@ -21,10 +21,10 @@
                 <thingDef>RawAgave</thingDef>
                 <countRange>15~25</countRange>
             </li>
-            <li Class="StockGenerator_SingleDef">
+            <!--<li Class="StockGenerator_SingleDef">
                 <thingDef>Ambrosia</thingDef>
                 <countRange>5~15</countRange>
-            </li>
+            </li>-->
             <li Class="StockGenerator_SingleDef">
                 <thingDef>SmokeleafLeaves</thingDef>
                 <countRange>5~15</countRange>
