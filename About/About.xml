@@ -76,7 +76,4 @@
         <li>zal.eyeprosthetics</li>
         <li>zal.levelthis</li>
     </loadAfter>
-    <incompatibleWith>
-		<li>Joe.RPGAdventureFlavour.Fork</li>
-	</incompatibleWith>
 </ModMetaData>
