@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Big and Small - Genes &amp; More</li> <!--RedMattis.Undead-->
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+
+				<!-- less agressive vampirism -->
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/HediffDef[defName="VU_DraculVampirism"]/comps/li[@Class="HediffCompProperties_Immunizable"]/severityPerDayNotImmune</xpath>
+					<value>
+						<severityPerDayNotImmune>0.35</severityPerDayNotImmune>
+					</value>
+				</li>
+
+			</operations>
+		</match>	
+	</Operation>
+</Patch>		

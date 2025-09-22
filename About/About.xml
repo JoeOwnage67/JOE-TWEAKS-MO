@@ -1,13 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <ModMetaData>
-    <name>Joe's Tweaks: Medieval Overhaul</name>
+    <name>Joe's Tweaks</name>
     <author>JoeOwnage</author>
     <supportedVersions>
         <li>1.5</li>
+        <li>1.6</li>
     </supportedVersions>
     <packageId>Joe.MO.Tweaks</packageId>
-    <description>My personal changes to MO from RPG adventure flavour pack (without the rest)</description>
+    <description>
+These are my personal tweaks to several mods (if they are loaded) I use for my playthroughs, which I'm sure will get added to over time. Only requires Harmony and Vanilla Expanded Framework.
+
+For RPG Flavour extensive rename of literally everything in Rimworld, including Vanilla Psycasts Expanded schools of magic, plus some bonus content, check out RPG Flavour Pack Forked:
+https://steamcommunity.com/sharedfiles/filedetails/?id=3342554570
+
+For Xenotypes loosely based on Dungeons and Dragons 5e, check out Joe's DnD Xenotypes:
+https://steamcommunity.com/sharedfiles/filedetails/?id=3568994651
+    </description>
     <url>https://steamcommunity.com/profiles/76561197979989977/myworkshopfiles/?appid=294100</url>
     <modDependencies>
         <li>
@@ -23,29 +32,61 @@
 	    </li>        
     </modDependencies>
     <loadAfter>     
+        <li>Accurex.MedievalEmpireOverhaul</li>
+        <li>Aoba.Tent</li>
+        <li>BotchJob.medievalfantasyquestrewards</li>
+        <li>BotchJob.medievalfantasyrareresources</li>
+        <li>badoaks.CampfireStews</li>
+        <li>ccyt.stargatesmod</li>
+        <li>DankPyon.Medieval.Overhaul</li>
+        <li>det.stoneborn</li>
+        <li>ferny.progressionaesthetics</li>
+        <li>ferny.ReplaceLib</li>
+        <li>jaxe.rimhud</li>
+        <li>JoeDaly.MedMeds.MO</li>
+        <li>jtcsbonereapers.formerlypphhyy</li>
+        <li>LTS.PG</li>
         <li>Ludeon.RimWorld</li>
+        <li>Ludeon.RimWorld.Anomaly</li>
+        <li>Ludeon.RimWorld.Biotech</li>
         <li>Ludeon.RimWorld.Ideology</li>
         <li>Ludeon.RimWorld.Royalty</li>
-        <li>Ludeon.RimWorld.Biotech</li>
-        <li>Ludeon.RimWorld.Anomaly</li>        
-        <li>VanillaExpanded.VTEXE</li>
-        <li>tidal.morevanilla.textures</li>      
-        <li>det.stoneborn</li>   
-        <li>DankPyon.Medieval.Overhaul</li>
-        <li>Turkler.MedievalOverhaul.ArcaneArchaeologists</li>
-		<li>JoeDaly.MedMeds.MO</li>
-        <li>Rebuild.COTR.DoorsandCorners</li>       
-        <li>zal.eyeprosthetics</li>		
-		<li>Wara.toomanymods</li>
-		<li>BotchJob.medievalfantasyquestrewards</li>
-		<li>BotchJob.medievalfantasyrareresources</li>
-		<li>zal.eyeprosthetics</li>
-		<li>Sierra.RF.MedievalOverhaul</li>
+        <li>Ludeon.RimWorld.Odyssey</li>
+        <li>marvinkosh.sometimesraidsgowrong</li>
+        <li>Neronix17.ForgottenRealms</li>
+        <li>Neronix17.Outland.Core</li>
         <li>OskarPotocki.VanillaFactionsExpanded.Core</li>
-        <li>ferny.ReplaceLib</li>
-        <li>ferny.progressionaesthetics</li>
+        <li>orion.cashregister</li>
+        <li>orion.hospitality</li>
+        <li>RedMattis.BetterPrerequisites</li>
+        <li>RedMattis.BigSmall.Core</li>
+        <li>RedMattis.LamiasAndOtherSnakes</li>
+        <li>RedMattis.MoreXenos</li>
+        <li>RedMattis.Undead</li>
+        <li>RedMattis.Yokai</li>
+        <li>Rebuild.COTR.DoorsandCorners</li>
+        <li>Sabrael.FRBEGnolls</li>
+        <li>Sabrael.FRBELoxo</li>
+        <li>Sierra.RF.MedievalOverhaul</li>
+        <li>sarg.alphaanimals</li>
+        <li>sarg.alphagenes</li>
+        <li>tidal.morevanilla.textures</li>
+        <li>Turkler.MedievalOverhaul.ArcaneArchaeologists</li>
+        <li>VanillaExpanded.VFESecurity</li>
+        <li>VanillaExpanded.VPsycastsE</li>
+        <li>VanillaExpanded.VTEXE</li>
+        <li>vanillaexpanded.outposts</li>
+        <li>vanillaexpanded.vpe.hemosage</li>
+        <li>vanillaracesexpanded.archon</li>
+        <li>vanillaracesexpanded.sanguophage</li>
+        <li>Wara.toomanymods</li>
+        <li>aRandomKiwi.RimThemes</li>
+        <li>zal.eyeprosthetics</li>
+        <li>zal.levelthis</li>
+        <li>ferny.progressionverticality</li>
     </loadAfter>
-    <incompatibleWith>
-		<li>Joe.RPGAdventureFlavour.Fork</li>
-	</incompatibleWith>
+
+    <loadBefore>
+	    <li>van.datools</li>
+	</loadBefore>
 </ModMetaData>

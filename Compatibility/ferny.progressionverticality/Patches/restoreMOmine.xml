@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+    <Operation Class="PatchOperationRemove">
+        <xpath>Defs/VEF.Buildings.HiddenDesignatorsDef[defName="FernyMedievalOverhaulProgVerticality_HiddenDesignators"]/hiddenDesignators/li[.="DankPyon_MineShaft"]</xpath>    
+    </Operation>
+    
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs</xpath>
+        <value>
+            <ResearchProjectDef>
+                <defName>DankPyon_Mining</defName>
+                <label>mining</label>
+                <description>Learn safety precautions and the proper way to build a mineshaft to mine resources and stones.</description>
+                <baseCost>1000</baseCost>
+                <tab>DankPyon_MedievalResearchTab</tab>
+                <techLevel>Medieval</techLevel>
+                <researchViewX>12</researchViewX>
+                <researchViewY>3.0</researchViewY>
+                <prerequisites>
+                    <li>DankPyon_Engineering</li>
+                </prerequisites>
+                <requiredResearchBuilding>DankPyon_AdvancedResearchBench</requiredResearchBuilding>
+                <generalRules>
+                    <rulesStrings>
+                        <li>subject->mining</li>
+                    </rulesStrings>
+                </generalRules>
+            </ResearchProjectDef>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="DankPyon_MineShaft"]</xpath>
+        <value>
+            <researchPrerequisites>
+                <li>DankPyon_Mining</li>
+            </researchPrerequisites>
+        </value>
+    </Operation>
+
+</Patch>

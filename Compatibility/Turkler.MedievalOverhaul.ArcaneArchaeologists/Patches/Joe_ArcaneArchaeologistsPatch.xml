@@ -20,7 +20,6 @@
                                 <recipeUsers>
                                     <li>HandTailoringBench</li>
                                     <li>ElectricTailoringBench</li>
-                                    <li MayRequire="DankPyon.Medieval.Overhaul">DankPyon_TailorsBench</li>
                                 </recipeUsers>
                                 <unfinishedThingDef>UnfinishedApparel</unfinishedThingDef>
                                 <skillRequirements>
@@ -136,7 +135,6 @@
                                 <recipeUsers>
                                     <li>HandTailoringBench</li>
                                     <li>ElectricTailoringBench</li>
-                                    <li MayRequire="DankPyon.Medieval.Overhaul">DankPyon_TailorsBench</li>
                                 </recipeUsers>
                                 <unfinishedThingDef>UnfinishedApparel</unfinishedThingDef>
                                 <skillRequirements>
