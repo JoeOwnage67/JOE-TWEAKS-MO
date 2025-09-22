@@ -35,5 +35,7 @@
       <li IfModActive="zal.eyeprosthetics">Compatibility/zal.eyeprosthetics</li>
       <li IfModActive="Accurex.MedievalEmpireOverhaul">Compatibility/Accurex.MedievalEmpireOverhaul</li>
       <li IfModActive="ferny.progressionverticality">Compatibility/ferny.progressionverticality</li>
+      <li IfModActive="RedMattis.BetterPrerequisites">Compatibility/RedMattis.BetterPrerequisites</li>
+      
   </v1.6>
 </loadFolders>
