@@ -21,7 +21,7 @@
     
     <Operation Class="PatchOperationFindMod">
         <mods>
-            <li>Medieval Overhaul: Arcane Archaeologists</li>
+            <li>Medieval Overhaul: Arcane Archaeologists (Continued)</li>
         </mods>
         <match Class="PatchOperationSequence">
             <operations>

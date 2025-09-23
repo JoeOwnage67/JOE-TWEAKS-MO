@@ -39,9 +39,6 @@ https://steamcommunity.com/sharedfiles/filedetails/?id=3568994651
 [b]MEDIEVAL MEDICINES: MEDIEVAL OVERHAUL EDITION[/b]
 - Removed eye patch if [CZK] Eye Prosthetics (Continued) is loaded.
 
-[b]ARCANE ARCAEOLOGISTS CONTINUED[/b]
-- Corrected improper layering of capes that has existed since the original mod using code provided by Airo. Thanks!
-
 [b]Medieval Overhaul: Royalty[/b]
 - patched mediation throne and simple throne to both satisfy lower tier throne requirements
 - patched simple throne to only require complex furniture research

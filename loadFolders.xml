@@ -30,7 +30,6 @@
       <li IfModActive="RedMattis.BigSmall.Core">Compatibility/RedMattis.BigSmall.Core</li>
       <li IfModActive="RedMattis.Undead">Compatibility/RedMattis.Undead</li>
       <li IfModActive="Rebuild.COTR.DoorsandCorners">Compatibility/Rebuild.COTR.DoorsandCorners</li>
-      <!-- <li IfModActive="Turkler.MedievalOverhaul.ArcaneArchaeologists">Compatibility/Turkler.MedievalOverhaul.ArcaneArchaeologists</li> NEEDS 1.6 UPDATE -->
       <li IfModActive="vanillaracesexpanded.sanguophage">Compatibility/vanillaracesexpanded.sanguophage</li>
       <li IfModActive="zal.eyeprosthetics">Compatibility/zal.eyeprosthetics</li>
       <li IfModActive="Accurex.MedievalEmpireOverhaul">Compatibility/Accurex.MedievalEmpireOverhaul</li>
