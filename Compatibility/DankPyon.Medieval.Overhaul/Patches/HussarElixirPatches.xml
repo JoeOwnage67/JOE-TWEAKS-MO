@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Medieval Overhaul - Battle Elixir for Hussars</li>
+		</mods>
+		<nomatch Class="PatchOperationSequence">
+			<operations>	
+
+				<!-- Battle Elixir descriptions -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Medieval Overhaul</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations> 
+							<li Class="PatchOperationReplace">
+								<xpath>Defs/ThoughtDef[defName="DankPyon_Thought_BattleElixir"]/stages</xpath>
+								<value>
+									<stages>
+										<li>
+											<label>high on battle elixir</label>
+											<description>I feel pumped but steady. I am the arrow in flight, ready to cut through you.</description>
+											<baseMoodEffect>5</baseMoodEffect>
+										</li>
+									</stages>
+								</value>
+							</li>
+
+							<li Class="PatchOperationReplace">
+								<xpath>Defs/HediffDef[defName="DankPyon_Addiction_BattleElixir"]/description</xpath>
+								<value>
+									<description>A chemical addiction to battle elixir. Long-term presence of the substance has caused neurological adaptations at the cellular level, so the brain can no longer function properly without the drug.\nWithout regular doses of battle elixir, withdrawal symptoms will begin. However, extended abstinence will force the brain to adapt back to its normal state, resolving the addiction.</description>
+								</value>
+							</li>
+
+							<!-- change Hussar gene to use Battle Elixir -->
+							<li Class="PatchOperationRemove">
+								<xpath>Defs/XenotypeDef[defName="Hussar"]/genes/li[.="ChemicalDependency_GoJuice"]</xpath>
+							</li>
+
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/XenotypeDef[defName="Hussar"]/genes</xpath>
+								<value>
+									<li>ChemicalDependency_DankPyon_Chemical_BattleElixir</li>
+								</value>
+							</li>
+
+							<li Class="PatchOperationFindMod">
+								<mods>
+									<li>Vanilla Races Expanded - Hussar</li>
+								</mods>
+								<match Class="PatchOperationSequence">
+									<operations>
+										<li Class="PatchOperationRemove">
+											<xpath>Defs/XenotypeDef[defName="VREH_Uhlan"]/genes/li[.="AddictionImmune_GoJuice"]</xpath>
+										</li>
+
+										<li Class="PatchOperationAdd">
+											<xpath>Defs/XenotypeDef[defName="VREH_Uhlan"]/genes</xpath>
+											<value>
+												<li>AddictionImmune_DankPyon_Chemical_BattleElixir</li>
+											</value>
+										</li>
+
+										<li Class="PatchOperationFindMod">
+											<mods>
+												<li>Medieval Fantasy Themed Quest Rewards</li>
+											</mods>
+											<match Class="PatchOperationSequence">
+												<operations>
+													<!-- change VREH_Uhlan description -->
+													<li Class="PatchOperationReplace">
+														<xpath>Defs/XenotypeDef[defName="VREH_Uhlan"]/description</xpath>
+														<value>
+															<description>Uhlans are a side-development from captured hussars, turned by the Deserters to become a counter to the empire-trained hussar program. Their genetic dependence on demon blood is both a deterrent against their capture, as well as an improvement to long-term usefulness.\n\nOften referred to as demons, for their permanently flushed skin and intense bloodthirst, uhlans are incredibly resilient and specialized in certain styles of combat. Quite often they are decked out in heavy armor, in which they can charge full tilt at their intended target.</description>
+														</value>	
+													</li>
+
+													<li Class="PatchOperationReplace">
+														<xpath>Defs/XenotypeDef[defName="VREH_Uhlan"]/descriptionShort</xpath>
+														<value>
+															<descriptionShort>Uhlans are a side-development from captured hussars, who fight aggressively and without emotion. Their genetic dependence on demon blood is both a deterrent against their capture, as well as an improvement to long-term usefulness.</descriptionShort>
+														</value>	
+													</li>
+
+													<!-- change VREH_ChemicalDependency_Luciferium description -->
+													<li Class="PatchOperationReplace">
+														<xpath>Defs/GeneDef[defName="VREH_ChemicalDependency_Luciferium"]/description</xpath>
+														<value>
+															<description>Carriers of this gene need to ingest a demon blood potion on a regular basis to survive. After 10 days without it, carriers will rapidly descend into madness. After 20 days, they will fall into a coma. After 30 days, they will die.</description>			                 
+														</value>	
+													</li>
+
+													<!-- change VREH_ChemicalDependency_Luciferium label -->
+													<li Class="PatchOperationReplace">
+														<xpath>Defs/GeneDef[defName="VREH_ChemicalDependency_Luciferium"]/label</xpath>
+														<value>
+															<label>demon blood need</label>			                 
+														</value>	
+													</li>
+
+													<!-- change gene texture to botch job texture -->
+													<li Class="PatchOperationReplace">
+														<xpath>Defs/GeneDef[defName="VREH_ChemicalDependency_Luciferium"]/iconPath</xpath>
+														<value>
+															<iconPath>UI/Genes/Luciferium_a</iconPath>		                 
+														</value>	
+													</li>
+													
+													<!-- give gene texture a background -->
+													<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="PatchOperationAdd">
+														<xpath>Defs/GeneDef[defName="VREH_ChemicalDependency_Luciferium"]</xpath>
+														<value>
+															<modExtensions>
+																<li Class="VEF.Genes.GeneExtension">
+																	<backgroundPathEndogenes>UI/Genes/Endogene</backgroundPathEndogenes>
+																	<backgroundPathXenogenes>UI/Genes/Xenogene</backgroundPathXenogenes>
+																</li>
+															</modExtensions>		                 
+														</value>	
+													</li>
+												</operations>
+											</match>
+										</li>
+									</operations>
+								</match>
+							</li>
+						</operations>
+					</match>
+				</li>
+			</operations>
+		</nomatch>			
+	</Operation>
+</Patch>		

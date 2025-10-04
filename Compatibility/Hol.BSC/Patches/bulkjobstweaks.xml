@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Patch>
+	<Operation Class ="PatchOperationSequence">
+		<operations>
+
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/RecipeDef[defName="MakeStoneBlocksBulkBase"]/workAmount</xpath>
+				<value>
+					<workAmount>2500</workAmount>
+				</value>
+			</li>
+
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/RecipeDef[defName="MakeStoneBlocksBulkBase5"]/workAmount</xpath>
+				<value>
+					<workAmount>5000</workAmount>
+				</value>
+			</li>
+
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/RecipeDef[defName="MakeStoneBlocksBulkBase10"]/workAmount</xpath>
+				<value>
+					<workAmount>7500</workAmount>
+				</value>
+			</li>
+
+			<li Class="PatchOperationRemove">
+				<xpath>Defs/RecipeDef[defName="Make_StoneBlocksAny3"]</xpath>
+			</li>
+
+			<li Class="PatchOperationRemove">
+				<xpath>Defs/RecipeDef[defName="Make_StoneBlocksAny5"]</xpath>
+			</li>
+
+			<li Class="PatchOperationRemove">
+				<xpath>Defs/RecipeDef[defName="Make_StoneBlocksAny10"]</xpath>
+			</li>
+
+		</operations>
+	</Operation>
+</Patch>		

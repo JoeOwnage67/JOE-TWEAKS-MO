@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Medieval Glass Patch for Rebuild</li>
+		</mods>
+		<nomatch Class="PatchOperationSequence">
+			<operations>	
+		
+				<!-- ================================ Smelt Glass on MO Furnace ====================== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Medieval Overhaul</li>
+					</mods>
+					<match Class="PatchOperationInsert">
+						<xpath>/Defs/ThingDef[defName="DankPyon_Furnace"]/recipes/li[1]</xpath>
+						<value>
+							<li>RB_Make_GlassFromChunks</li>
+						</value>
+					</match>
+				</li>
+
+				<!-- ================== Glass Walls do not require electricity ====================== -->				
+				<li Class="PatchOperationReplace">
+        			<xpath>Defs/ThingDef[defName="RB_GlassWall"]/researchPrerequisites</xpath>
+            		<value>
+						<researchPrerequisites>
+							<li>Smithing</li>
+						</researchPrerequisites>
+            		</value>
+				</li>
+
+				<li Class="PatchOperationReplace">
+          			<xpath>Defs/ThingDef[defName="RB_ClerestoryWall"]/researchPrerequisites</xpath>
+            		<value>
+						<researchPrerequisites>
+							<li>Smithing</li>
+						</researchPrerequisites>
+            		</value>
+				</li>
+
+			</operations>
+		</nomatch>			
+	</Operation>
+</Patch>		
