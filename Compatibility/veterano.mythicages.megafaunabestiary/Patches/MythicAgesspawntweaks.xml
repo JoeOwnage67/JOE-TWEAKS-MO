@@ -1,0 +1,378 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Patch>
+  <!-- Triple Harpeagle nest spawn interval -->
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="MA_HarpeagleNest"]/comps/li[@Class="MythicAges.CompProperties_HarpeagleNestSpawner"]/spawnInterval</xpath>
+    <value>
+      <spawnInterval>90000</spawnInterval>
+    </value>
+  </Operation>
+  <!-- Triple Harpeagle nest fertilized egg spawnMtbDays -->
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="MA_HarpeagleNest"]/comps/li[@Class="MythicAges.CompProperties_BurrowSpawnerItem" and thingDef="MA_HarpeagleEggFertilized"]/spawnMtbDays</xpath>
+    <value>
+      <spawnMtbDays>6.0</spawnMtbDays>
+    </value>
+  </Operation>
+  <!-- Triple Harpeagle nest unfertilized egg spawnMtbDays -->
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="MA_HarpeagleNest"]/comps/li[@Class="MythicAges.CompProperties_BurrowSpawnerItem" and thingDef="MA_HarpeagleEggUnfertilized"]/spawnMtbDays</xpath>
+    <value>
+      <spawnMtbDays>3.0</spawnMtbDays>
+    </value>
+  </Operation>
+  <!-- Triple Sporemole burrow spawn interval -->
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="MA_SporemoleBurrow"]/comps/li[@Class="MythicAges.CompProperties_BurrowSpawner"]/spawnInterval</xpath>
+    <value>
+      <spawnInterval>180000</spawnInterval>
+    </value>
+  </Operation>
+  <!-- Triple Sporemole burrow bones spawnMtbDays -->
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="MA_SporemoleBurrow"]/comps/li[@Class="MythicAges.CompProperties_BurrowSpawnerItem" and thingDef="MA_SporemoleBones"]/spawnMtbDays</xpath>
+    <value>
+      <spawnMtbDays>9</spawnMtbDays>
+    </value>
+  </Operation>
+  <!-- Triple Sporemole burrow Meatshroom Bolus spawnMtbDays -->
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="MA_SporemoleBurrow"]/comps/li[@Class="MythicAges.CompProperties_BurrowSpawnerItem" and thingDef="MA_MeatshroomBolus"]/spawnMtbDays</xpath>
+    <value>
+      <spawnMtbDays>3</spawnMtbDays>
+    </value>
+  </Operation>
+  <!-- Make modded animals half as likely to spawn as vanilla elk -->
+  <!-- Direhorse -->
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="MA_Direhorse"]/race/wildBiomes</xpath>
+    <value>
+      <wildBiomes>
+        <BorealForest>0.5</BorealForest>
+        <TemperateForest>0.25</TemperateForest>
+        <Tundra>0.075</Tundra>
+        <ColdBog>0.075</ColdBog>
+        <IceSheet>0.025</IceSheet>
+        <Desert>0.04</Desert>
+        <ExtremeDesert>0.035</ExtremeDesert>
+      </wildBiomes>
+    </value>
+  </Operation>
+  <!-- Deermoss -->
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="MA_Deermoss"]/race/wildBiomes</xpath>
+    <value>
+      <wildBiomes>
+        <TemperateForest>0.25</TemperateForest>
+        <BorealForest>0.5</BorealForest>
+        <ColdBog>0.075</ColdBog>
+        <Tundra>0.075</Tundra>
+        <TemperateSwamp>0.08</TemperateSwamp>
+        <IceSheet>0.03</IceSheet>
+        <GlacialPlain MayRequire="Ludeon.RimWorld.Odyssey">0.04</GlacialPlain>
+      </wildBiomes>
+    </value>
+  </Operation>
+  <!-- Hellboar -->
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="MA_Hellboar"]/race/wildBiomes</xpath>
+    <value>
+      <wildBiomes>
+        <AridShrubland>0.08</AridShrubland>
+        <Desert>0.04</Desert>
+        <ExtremeDesert>0.035</ExtremeDesert>
+        <TemperateForest>0.04</TemperateForest>
+        <BorealForest>0.06</BorealForest>
+        <TemperateSwamp>0.03</TemperateSwamp>
+        <Tundra>0.01</Tundra>
+      </wildBiomes>
+    </value>
+  </Operation>
+  <!-- Plastemmoth -->
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="MA_Plastemmoth"]/race/wildBiomes</xpath>
+    <value>
+      <wildBiomes>
+        <TemperateForest>0.04</TemperateForest>
+        <BorealForest>0.05</BorealForest>
+        <ColdBog>0.045</ColdBog>
+        <Tundra>0.045</Tundra>
+        <TemperateSwamp>0.05</TemperateSwamp>
+        <IceSheet>0.04</IceSheet>
+        <GlacialPlain MayRequire="Ludeon.RimWorld.Odyssey">0.04</GlacialPlain>
+        <AridShrubland>0.015</AridShrubland>
+      </wildBiomes>
+    </value>
+  </Operation>
+  <!-- Remove faction from Harpeagle nest spawner so Harpeagles spawn as wild animals -->
+  <Operation Class="PatchOperationRemove">
+    <xpath>Defs/ThingDef[defName="MA_HarpeagleNest"]/comps/li[@Class="MythicAges.CompProperties_HarpeagleNestSpawner"]/factionDef</xpath>
+  </Operation>
+  <!-- Remove faction from Sporemole burrow spawner so Sporemoles spawn as wild animals -->
+  <Operation Class="PatchOperationRemove">
+    <xpath>Defs/ThingDef[defName="MA_SporemoleBurrow"]/comps/li[@Class="MythicAges.CompProperties_BurrowSpawner"]/factionDef</xpath>
+  </Operation>
+
+  <!-- Add mythicagesproxaggro comp to Harpeagle nest for proximity aggro -->
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="MA_HarpeagleNest"]/comps</xpath>
+    <value>
+      <li Class="mythicagesproxaggro.CompProperties_HarpeagleAggro" />
+    </value>
+  </Operation>
+
+  <!-- Add mythicagesproxaggro comp to Sporemole burrow for proximity aggro -->
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="MA_SporemoleBurrow"]/comps</xpath>
+    <value>
+      <li Class="mythicagesproxaggro.CompProperties_SporemoleAggro" />
+    </value>
+  </Operation>
+
+  <!-- Remove Tundra from Sporemole Burrow allowed biomes -->
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/VEF.Maps.ObjectSpawnsDef[defName="MA_ObjectSpawn_SporemoleBurrow"]/allowedBiomes</xpath>
+    <value>
+      <allowedBiomes>
+        <li>TemperateForest</li>
+        <li>BorealForest</li>
+        <li>TemperateSwamp</li>
+        <li MayRequire="DankPyon.Medieval.Overhaul">DankPyon_DarkForest</li>
+        <li MayRequire="zylle.MoreVanillaBiomes">ZBiome_AlpineMeadow</li>
+        <li MayRequire="zylle.MoreVanillaBiomes">ZBiome_DesertOasis</li>
+        <li MayRequire="zylle.MoreVanillaBiomes">ZBiome_CoastalDunes</li>
+        <li MayRequire="zylle.MoreVanillaBiomes">ZBiome_CloudForest</li>
+        <li MayRequire="zylle.MoreVanillaBiomes">ZBiome_Sandbar_NoBeach</li>
+        <li MayRequire="zylle.MoreVanillaBiomes">ZBiome_Marsh</li>
+        <li MayRequire="zylle.MoreVanillaBiomes">ZBiome_Grasslands</li>
+        <li MayRequire="sarg.alphabiomes">AB_FeraliskInfestedJungle</li>
+        <li MayRequire="sarg.alphabiomes">AB_GallatrossGraveyard</li>
+        <li MayRequire="sarg.alphabiomes">AB_GelatinousSuperorganism</li>
+        <li MayRequire="sarg.alphabiomes">AB_IdyllicMeadows</li>
+        <li MayRequire="sarg.alphabiomes">AB_MiasmicMangrove</li>
+        <li MayRequire="sarg.alphabiomes">AB_MycoticJungle</li>
+        <li MayRequire="sarg.alphabiomes">AB_OcularForest</li>
+        <li MayRequire="sarg.alphabiomes">AB_TarPits</li>
+      </allowedBiomes>
+    </value>
+  </Operation>
+
+  <!-- Remove Tundra and ExtremeDesert from Harpeagle Nest allowed biomes -->
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/VEF.Maps.ObjectSpawnsDef[defName="MA_ObjectSpawn_HarpeagleNest"]/allowedBiomes</xpath>
+    <value>
+      <allowedBiomes>
+        <li>TemperateForest</li>
+        <li>BorealForest</li>
+        <li>AridShrubland</li>
+        <li>TemperateSwamp</li>
+        <li>TropicalRainforest</li>
+        <li>Desert</li>
+        <li MayRequire="DankPyon.Medieval.Overhaul">DankPyon_DarkForest</li>
+        <li MayRequire="zylle.MoreVanillaBiomes">ZBiome_AlpineMeadow</li>
+        <li MayRequire="zylle.MoreVanillaBiomes">ZBiome_DesertOasis</li>
+        <li MayRequire="zylle.MoreVanillaBiomes">ZBiome_CoastalDunes</li>
+        <li MayRequire="zylle.MoreVanillaBiomes">ZBiome_CloudForest</li>
+        <li MayRequire="zylle.MoreVanillaBiomes">ZBiome_Sandbar_NoBeach</li>
+        <li MayRequire="zylle.MoreVanillaBiomes">ZBiome_Marsh</li>
+        <li MayRequire="zylle.MoreVanillaBiomes">ZBiome_Grasslands</li>
+        <li MayRequire="sarg.alphabiomes">AB_FeraliskInfestedJungle</li>
+        <li MayRequire="sarg.alphabiomes">AB_GallatrossGraveyard</li>
+        <li MayRequire="sarg.alphabiomes">AB_GelatinousSuperorganism</li>
+        <li MayRequire="sarg.alphabiomes">AB_IdyllicMeadows</li>
+        <li MayRequire="sarg.alphabiomes">AB_MiasmicMangrove</li>
+        <li MayRequire="sarg.alphabiomes">AB_MycoticJungle</li>
+        <li MayRequire="sarg.alphabiomes">AB_OcularForest</li>
+        <li MayRequire="sarg.alphabiomes">AB_TarPits</li>
+      </allowedBiomes>
+    </value>
+  </Operation>
+
+    <!-- add animals to biomes from other mods -->
+    <!-- Medieval Overhaul -->
+    <Operation Class="PatchOperationFindMod">
+      <mods>
+        <li>Medieval Overhaul</li>
+      </mods>
+      <match Class="PatchOperationSequence">
+        <operations>
+
+          <!-- Direhorse -->
+          <li Class="PatchOperationAdd">
+            <xpath>Defs/ThingDef[defName="MA_Direhorse"]/race/wildBiomes</xpath>
+            <value>
+                <DankPyon_DarkForest>0.5</DankPyon_DarkForest>
+            </value>
+          </li>
+
+          <!-- Deermoss -->
+          <li Class="PatchOperationAdd">
+            <xpath>Defs/ThingDef[defName="MA_Deermoss"]/race/wildBiomes</xpath>
+            <value>
+                <DankPyon_DarkForest>0.5</DankPyon_DarkForest>
+            </value>
+          </li>
+
+          <!-- Hellboar -->
+          <li Class="PatchOperationAdd">
+            <xpath>Defs/ThingDef[defName="MA_Hellboar"]/race/wildBiomes</xpath>
+            <value>
+                <DankPyon_DarkForest>0.5</DankPyon_DarkForest>
+            </value>
+          </li>
+
+          <!-- Plastemmoth -->
+          <li Class="PatchOperationAdd">
+            <xpath>Defs/ThingDef[defName="MA_Plastemmoth"]/race/wildBiomes</xpath>
+            <value>
+                <DankPyon_DarkForest>0.5</DankPyon_DarkForest>
+            </value>
+          </li>
+
+        </operations>
+      </match>
+    </Operation>
+
+    <!-- Alpha Biomes -->
+    <Operation Class="PatchOperationFindMod">
+      <mods>
+        <li>Alpha Biomes</li>
+      </mods>
+      <match Class="PatchOperationSequence">
+        <operations>
+
+          <!-- Direhorse -->
+          <li Class="PatchOperationAdd">
+            <xpath>Defs/ThingDef[defName="MA_Direhorse"]/race/wildBiomes</xpath>
+            <value>
+                <AB_FeraliskInfestedJungle>0.05</AB_FeraliskInfestedJungle>
+                <AB_GallatrossGraveyard>0.025</AB_GallatrossGraveyard>
+                <AB_GelatinousSuperorganism>0.03</AB_GelatinousSuperorganism>
+                <AB_IdyllicMeadows>0.05</AB_IdyllicMeadows>
+                <AB_MiasmicMangrove>0.04</AB_MiasmicMangrove>
+                <AB_MycoticJungle>0.045</AB_MycoticJungle>
+                <AB_OcularForest>0.035</AB_OcularForest>
+                <AB_TarPits>0.03</AB_TarPits>
+            </value>
+          </li>
+
+          <!-- Deermoss -->
+          <li Class="PatchOperationAdd">
+            <xpath>Defs/ThingDef[defName="MA_Deermoss"]/race/wildBiomes</xpath>
+            <value>
+                <AB_FeraliskInfestedJungle>0.05</AB_FeraliskInfestedJungle>
+                <AB_GallatrossGraveyard>0.025</AB_GallatrossGraveyard>
+                <AB_GelatinousSuperorganism>0.03</AB_GelatinousSuperorganism>
+                <AB_IdyllicMeadows>0.05</AB_IdyllicMeadows>
+                <AB_MiasmicMangrove>0.04</AB_MiasmicMangrove>
+                <AB_MycoticJungle>0.045</AB_MycoticJungle>
+                <AB_OcularForest>0.035</AB_OcularForest>
+                <AB_TarPits>0.03</AB_TarPits>
+            </value>
+          </li>
+
+          <!-- Hellboar -->
+          <li Class="PatchOperationAdd">
+            <xpath>Defs/ThingDef[defName="MA_Hellboar"]/race/wildBiomes</xpath>
+            <value>
+                <AB_FeraliskInfestedJungle>0.05</AB_FeraliskInfestedJungle>
+                <AB_GallatrossGraveyard>0.025</AB_GallatrossGraveyard>
+                <AB_GelatinousSuperorganism>0.03</AB_GelatinousSuperorganism>
+                <AB_IdyllicMeadows>0.05</AB_IdyllicMeadows>
+                <AB_MiasmicMangrove>0.04</AB_MiasmicMangrove>
+                <AB_MycoticJungle>0.045</AB_MycoticJungle>
+                <AB_OcularForest>0.035</AB_OcularForest>
+                <AB_TarPits>0.03</AB_TarPits>
+            </value>
+          </li>
+
+          <!-- Plastemmoth -->
+          <li Class="PatchOperationAdd">
+            <xpath>Defs/ThingDef[defName="MA_Plastemmoth"]/race/wildBiomes</xpath>
+            <value>
+                <AB_FeraliskInfestedJungle>0.05</AB_FeraliskInfestedJungle>
+                <AB_GallatrossGraveyard>0.025</AB_GallatrossGraveyard>
+                <AB_GelatinousSuperorganism>0.03</AB_GelatinousSuperorganism>
+                <AB_IdyllicMeadows>0.05</AB_IdyllicMeadows>
+                <AB_MiasmicMangrove>0.04</AB_MiasmicMangrove>
+                <AB_MycoticJungle>0.045</AB_MycoticJungle>
+                <AB_OcularForest>0.035</AB_OcularForest>
+                <AB_TarPits>0.03</AB_TarPits>
+            </value>
+          </li>
+
+        </operations>
+      </match>
+    </Operation>
+
+    <!-- More Vanilla Biomes -->
+    <Operation Class="PatchOperationFindMod">
+      <mods>
+        <li>More Vanilla Biomes</li>
+      </mods>
+      <match Class="PatchOperationSequence">
+        <operations>
+
+          <!-- Direhorse -->
+          <li Class="PatchOperationAdd">
+            <xpath>Defs/ThingDef[defName="MA_Direhorse"]/race/wildBiomes</xpath>
+            <value>
+                <ZBiome_AlpineMeadow>0.045</ZBiome_AlpineMeadow>
+                <ZBiome_DesertOasis>0.025</ZBiome_DesertOasis>
+                <ZBiome_CoastalDunes>0.03</ZBiome_CoastalDunes>
+                <ZBiome_CloudForest>0.05</ZBiome_CloudForest>
+                <ZBiome_Sandbar_NoBeach>0.02</ZBiome_Sandbar_NoBeach>
+                <ZBiome_Marsh>0.04</ZBiome_Marsh>
+                <ZBiome_Grasslands>0.045</ZBiome_Grasslands>
+            </value>
+          </li>
+
+          <!-- Deermoss -->
+          <li Class="PatchOperationAdd">
+            <xpath>Defs/ThingDef[defName="MA_Deermoss"]/race/wildBiomes</xpath>
+            <value>
+                <ZBiome_AlpineMeadow>0.045</ZBiome_AlpineMeadow>
+                <ZBiome_DesertOasis>0.025</ZBiome_DesertOasis>
+                <ZBiome_CoastalDunes>0.03</ZBiome_CoastalDunes>
+                <ZBiome_CloudForest>0.05</ZBiome_CloudForest>
+                <ZBiome_Sandbar_NoBeach>0.02</ZBiome_Sandbar_NoBeach>
+                <ZBiome_Marsh>0.04</ZBiome_Marsh>
+                <ZBiome_Grasslands>0.045</ZBiome_Grasslands>
+            </value>
+          </li>
+
+          <!-- Hellboar -->
+          <li Class="PatchOperationAdd">
+            <xpath>Defs/ThingDef[defName="MA_Hellboar"]/race/wildBiomes</xpath>
+            <value>
+                <ZBiome_AlpineMeadow>0.045</ZBiome_AlpineMeadow>
+                <ZBiome_DesertOasis>0.025</ZBiome_DesertOasis>
+                <ZBiome_CoastalDunes>0.03</ZBiome_CoastalDunes>
+                <ZBiome_CloudForest>0.05</ZBiome_CloudForest>
+                <ZBiome_Sandbar_NoBeach>0.02</ZBiome_Sandbar_NoBeach>
+                <ZBiome_Marsh>0.04</ZBiome_Marsh>
+                <ZBiome_Grasslands>0.045</ZBiome_Grasslands>
+            </value>
+          </li>
+
+          <!-- Plastemmoth -->
+          <li Class="PatchOperationAdd">
+            <xpath>Defs/ThingDef[defName="MA_Plastemmoth"]/race/wildBiomes</xpath>
+            <value>
+                <ZBiome_AlpineMeadow>0.045</ZBiome_AlpineMeadow>
+                <ZBiome_DesertOasis>0.025</ZBiome_DesertOasis>
+                <ZBiome_CoastalDunes>0.03</ZBiome_CoastalDunes>
+                <ZBiome_CloudForest>0.05</ZBiome_CloudForest>
+                <ZBiome_Sandbar_NoBeach>0.02</ZBiome_Sandbar_NoBeach>
+                <ZBiome_Marsh>0.04</ZBiome_Marsh>
+                <ZBiome_Grasslands>0.045</ZBiome_Grasslands>
+            </value>
+          </li>
+
+        </operations>
+      </match>
+    </Operation>
+
+
+  </Patch>

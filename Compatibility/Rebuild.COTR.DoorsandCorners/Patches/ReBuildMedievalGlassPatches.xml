@@ -8,7 +8,7 @@
 		<nomatch Class="PatchOperationSequence">
 			<operations>	
 		
-				<!-- ================================ Smelt Glass on MO Furnace ====================== -->
+				<!-- ================================ Smelt Glass on MO Furnace - now included in MO as of 1.6 (on the kiln) ====================== 
 				<li Class="PatchOperationFindMod">
 					<mods>
 						<li>Medieval Overhaul</li>
@@ -19,28 +19,36 @@
 							<li>RB_Make_GlassFromChunks</li>
 						</value>
 					</match>
-				</li>
+				</li>-->
 
-				<!-- ================== Glass Walls do not require electricity ====================== -->				
-				<li Class="PatchOperationReplace">
-        			<xpath>Defs/ThingDef[defName="RB_GlassWall"]/researchPrerequisites</xpath>
-            		<value>
-						<researchPrerequisites>
-							<li>Smithing</li>
-						</researchPrerequisites>
-            		</value>
-				</li>
+				<!-- ================== Glass Walls do not require electricity - now included in MO as of 1.6 ====================== -->				
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Medieval Overhaul</li>
+					</mods>
+					<nomatch Class="PatchOperationSequence">
+						<operations>
+							<li Class="PatchOperationReplace">
+								<xpath>Defs/ThingDef[defName="RB_GlassWall"]/researchPrerequisites</xpath>
+								<value>
+									<researchPrerequisites>
+										<li>Smithing</li>
+									</researchPrerequisites>
+								</value>
+							</li>
 
-				<li Class="PatchOperationReplace">
-          			<xpath>Defs/ThingDef[defName="RB_ClerestoryWall"]/researchPrerequisites</xpath>
-            		<value>
-						<researchPrerequisites>
-							<li>Smithing</li>
-						</researchPrerequisites>
-            		</value>
-				</li>
-
+							<li Class="PatchOperationReplace">
+								<xpath>Defs/ThingDef[defName="RB_ClerestoryWall"]/researchPrerequisites</xpath>
+								<value>
+									<researchPrerequisites>
+										<li>Smithing</li>
+									</researchPrerequisites>
+								</value>
+							</li>
+						</operations>
+					</nomatch>		
+				</li>	
 			</operations>
-		</nomatch>			
+		</nomatch>
 	</Operation>
 </Patch>		

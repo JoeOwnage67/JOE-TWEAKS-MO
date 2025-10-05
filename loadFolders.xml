@@ -36,6 +36,6 @@
       <li IfModActive="ferny.progressionverticality">Compatibility/ferny.progressionverticality</li>
       <li IfModActive="RedMattis.BetterPrerequisites">Compatibility/RedMattis.BetterPrerequisites</li>
       <li IfModActive="Hol.BSC">Compatibility/Hol.BSC</li>
-      
+      <li IfModActive="veterano.mythicages.megafaunabestiary">Compatibility/veterano.mythicages.megafaunabestiary</li>
   </v1.6>
 </loadFolders>

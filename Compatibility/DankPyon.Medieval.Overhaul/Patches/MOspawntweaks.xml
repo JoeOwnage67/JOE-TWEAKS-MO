@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Patch>
+<!-- Triple Deathstinger spawn interval in HornetNest (1.6) -->
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="DankPyon_HornetNest"]/comps/li[@Class="MedievalOverhaul.CompProperties_HornetNestSpawner"]/pawnSpawnIntervalDays</xpath>
+    <value>
+      <pawnSpawnIntervalDays>1.5~3</pawnSpawnIntervalDays>
+    </value>
+  </Operation>
+
+  <!-- Remove faction from Deathstinger spawner so they spawn as wild animals (1.6) -->
+  <Operation Class="PatchOperationRemove">
+    <xpath>Defs/ThingDef[defName="DankPyon_HornetNest"]/comps/li[@Class="MedievalOverhaul.CompProperties_HornetNestSpawner"]/faction</xpath>
+  </Operation>
+
+  <!-- Triple Hornet Honey spawn interval in HornetNest (1.6) -->
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="DankPyon_HornetNest"]/comps/li[@Class="CompProperties_Spawner" and thingToSpawn="DankPyon_HornetHoney"]/spawnIntervalRange</xpath>
+    <value>
+      <spawnIntervalRange>78000~90000</spawnIntervalRange>
+    </value>
+  </Operation>
+
+  <!-- Triple Hornet Jelly spawn interval in HornetNest (1.6) -->
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="DankPyon_HornetNest"]/comps/li[@Class="CompProperties_Spawner" and thingToSpawn="DankPyon_HornetJelly"]/spawnIntervalRange</xpath>
+    <value>
+      <spawnIntervalRange>78000~90000</spawnIntervalRange>
+    </value>
+  </Operation>
+
+  <!-- Add animalproxaggro comp to HornetNest (deathstinger nest) for proximity aggro -->
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="DankPyon_HornetNest"]/comps</xpath>
+    <value>
+      <li Class="deathstingerproxaggro.CompProperties_DeathstingerAggro" />
+    </value>
+  </Operation>
+
+  </Patch>
