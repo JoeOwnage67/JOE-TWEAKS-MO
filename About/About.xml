@@ -88,7 +88,7 @@ https://steamcommunity.com/sharedfiles/filedetails/?id=3568994651
         <li>veterano.mythicages.megafaunabestiary</li>
     </loadAfter>
 
-    <loadBefore>
+    <!--<loadBefore>
 	    <li>van.datools</li>
-	</loadBefore>
+	</loadBefore>-->
 </ModMetaData>

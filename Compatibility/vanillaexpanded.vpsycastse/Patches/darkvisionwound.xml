@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Vanilla Psycasts Expanded</li> <!--RedMattis.Undead-->
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+
+				<!-- less infectious vampire bite -->
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/HediffDef[defName="VPE_Darkvision_Display"]/displayWound</xpath>
+					<value>
+						<displayWound>false</displayWound>
+					</value>
+				</li>
+
+			</operations>
+		</match>	
+	</Operation>
+</Patch>		

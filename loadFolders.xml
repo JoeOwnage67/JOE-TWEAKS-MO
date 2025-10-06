@@ -37,5 +37,6 @@
       <li IfModActive="RedMattis.BetterPrerequisites">Compatibility/RedMattis.BetterPrerequisites</li>
       <li IfModActive="Hol.BSC">Compatibility/Hol.BSC</li>
       <li IfModActive="veterano.mythicages.megafaunabestiary">Compatibility/veterano.mythicages.megafaunabestiary</li>
+      <li IfModActive="vanillaexpanded.vpsycastse">Compatibility/vanillaexpanded.vpsycastse</li>
   </v1.6>
 </loadFolders>
