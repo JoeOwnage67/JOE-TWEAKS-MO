@@ -5,7 +5,7 @@
 	<RecipeDef MayRequire="DankPyon.Medieval.Overhaul" ParentName="DankPyon_MineShaftBase">
 		<defName>Joe_MakeOre_Mithril</defName>
 		<description>Mine deep down underground to obtain raw mithril.</description>
-		<workAmount>6000</workAmount>
+		<workAmount>3000</workAmount>
 		<label>mine raw mithril</label>
 		<jobString>Mining raw mithril.</jobString>
 		<products>
@@ -17,7 +17,7 @@
 	<RecipeDef MayRequire="DankPyon.Medieval.Overhaul" ParentName="DankPyon_MineShaftBase">
 		<defName>Joe_MakeOre_Uranium</defName>
 		<description>Mine deep down underground to obtain raw oricalcum.</description>
-		<workAmount>6000</workAmount>
+		<workAmount>3000</workAmount>
 		<label>mine raw oricalcum</label>
 		<jobString>Mining raw oricalcum.</jobString>
 		<products>
@@ -30,11 +30,48 @@
 	<RecipeDef MayRequire="det.epochspyrinth" ParentName="DankPyon_MineShaftBase">
 		<defName>Joe_Mine_Pyrinth</defName>
 		<description>Mine deep down underground to obtain raw pyrinth.</description>
-		<workAmount>1000</workAmount>
-		<label>mine raw pyrinth</label>
-		<jobString>Mining raw pyrinth.</jobString>
+		<workAmount>600</workAmount>
+		<label>mine 1 raw pyrinth</label>
+		<jobString>Mining 1 raw pyrinth.</jobString>
 		<products>
 			<DV_Pyrinth>1</DV_Pyrinth>
 		</products>
 	</RecipeDef>
+
+	<RecipeDef MayRequire="det.epochspyrinth" ParentName="DankPyon_MineShaftBase">
+		<defName>Joe_Mine_PyrinthBulk</defName>
+		<description>Mine deep down underground to obtain raw pyrinth.</description>
+		<workAmount>3600</workAmount>
+		<label>mine raw pyrinth x5</label>
+		<jobString>Mining 5 raw pyrinth.</jobString>
+		<products>
+			<DV_Pyrinth>5</DV_Pyrinth>
+		</products>
+	</RecipeDef>
+
+		<!-- add gold ore to mine -->
+	
+	<RecipeDef MayRequire="DankPyon.Medieval.Overhaul" ParentName="DankPyon_MineShaftBase">
+		<defName>Joe_Mine_Gold</defName>
+		<description>Mine deep down underground to obtain gold ore</description>
+		<workAmount>900</workAmount>
+		<label>mine gold ore</label>
+		<jobString>Mining 1 gold ore.</jobString>
+		<products>
+			<DankPyon_GoldOre>1</DankPyon_GoldOre>
+		</products>
+	</RecipeDef>
+
+	<RecipeDef MayRequire="DankPyon.Medieval.Overhaul" ParentName="DankPyon_MineShaftBase">
+		<defName>Joe_Mine_GoldBulk</defName>
+		<description>Mine deep down underground to obtain gold ore</description>
+		<workAmount>3600</workAmount>
+		<label>mine gold ore x5</label>
+		<jobString>Mining 5 gold ore.</jobString>
+		<products>
+			<DankPyon_GoldOre>5</DankPyon_GoldOre>
+		</products>
+	</RecipeDef>
+
+
 </Defs>
